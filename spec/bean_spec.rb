@@ -9,7 +9,7 @@ describe Bean do
   end
 
   it "sprouts" do
-    Bean.stub :should_sprout, true do
+    bean.stub :should_sprout, true do
       bean.sprout
       bean.state.must_equal "sprouted"
     end
