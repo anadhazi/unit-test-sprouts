@@ -11,7 +11,7 @@ describe Bean do
   it "sprouts" do
     bean.stub :should_sprout, true do
       bean.sprout
-      bean.state.must_equal "sprouted"
     end
+    bean.state.must_equal "sprouted"
   end
 end
